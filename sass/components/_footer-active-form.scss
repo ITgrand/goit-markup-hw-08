@@ -1,0 +1,65 @@
+.footer-active {
+  padding-top: 12px;
+  margin-left: 93px;
+
+  &__title {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__mail {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__user-mail {
+    width: 358px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: inherit;
+
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+
+    width: 200px;
+    padding-left: 29px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: var(--btm-color);
+    border-color: var(--btm-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__btn:focus {
+    background-color: #188ce8;
+  }
+
+  &__btn-icon {
+    margin-left: 10px;
+  }
+}
