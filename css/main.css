@@ -354,14 +354,25 @@ p {
   }
 }*/
 .hero {
-  margin: auto;
-  max-width: 480px;
   text-align: center;
 }
 
 .hero-area {
-  padding: 118px 60px;
-  background-color: blue;
+  margin: auto;
+  max-width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero/hero-mobile.jpg");
+  background-size: cover;
+  background-color: #2f303a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-area {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero/hero-mobile@2x.jpg");
+  }
 }
 
 .hero-area__title {
@@ -389,34 +400,35 @@ p {
   color: white;
 }
 
-/*
-.hero-area {
-  background-color: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-
-  &__title {
-    margin: auto;
-    padding-top: 200px;
-    margin-bottom: 30px;
-
-    width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
+@media screen and (min-width: 768px) {
+  .hero-area {
+    max-width: 768px;
+    padding: 118px 204px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero/hero-tablet.jpg");
   }
+}
 
-  
-}*/
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-area {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero/hero-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-area {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero/hero-desktop.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-area {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero/hero-desktop@2x.jpg");
+  }
+}
+
 .features {
   padding: 0%;
 }
