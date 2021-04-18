@@ -66,12 +66,30 @@ p {
   padding: 0px;
 }
 
-/*.container {
-  width: 1200px;
+.container {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}*/
+  max-width: 480px;
+  /*/&_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }/*/
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 .title {
   font-weight: bold;
   font-size: 36px;
@@ -424,6 +442,81 @@ p {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-area {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/hero/hero-desktop@2x.jpg");
+  }
+}
+
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.features-area__item {
+  max-width: 100%;
+}
+
+.features-area__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.features-area__link {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features-area__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features-area__text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .features-area__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .features-area__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-area__list {
+    display: flex;
+  }
+  .features-area__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .features-area__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
   }
 }
 
