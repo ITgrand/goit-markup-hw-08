@@ -717,7 +717,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .team__list {
+  .team-area__list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -727,6 +727,24 @@ p {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-area {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team-area__title {
+    margin-bottom: 50px;
+    font-size: 26px;
+    line-height: 1.17;
+  }
+  .team-area__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .team-area__info-container {
+    padding-bottom: 30px;
   }
 }
 
