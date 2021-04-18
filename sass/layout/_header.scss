@@ -1,3 +1,46 @@
+@media screen and (max-width: 768px) {
+  .menu,
+  .contact {
+    display: none;
+  }
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.current {
+  position: relative;
+  color: var(--accent-color);
+}
+
+.contact {
+  &__mail,
+  &__tel {
+    color: var(--secondary-color);
+  }
+
+  &__mail:hover,
+  &__mail:focus,
+  &__tel:hover,
+  &__tel:focus {
+    color: var(--accent-color);
+  }
+
+  &__mail:hover svg,
+  &__mail:focus svg,
+  &__tel:hover svg,
+  &__tel:focus svg {
+    fill: currentColor;
+  }
+}
+
+.logo__studio {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /*.header {
   border-bottom: 1px solid #ececec;
 }
