@@ -1,78 +1,84 @@
-.clients-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  text-align: center;
-}
-
 .clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   &__title {
+    margin-bottom: 30px;
     text-align: center;
-    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
   }
 
   &__list {
-    margin: 0;
-    padding: 0;
-
     display: flex;
-    text-align: center;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 
   &__items {
-    width: 170px;
-    height: 90px;
-  }
-
-  &__items:not(:last-child) {
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 2);
   }
 
   &__link {
-    width: 100%;
-    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border: 1px solid #afb1b8;
+    align-items: center;
+    max-width: 210px;
+    height: 92px;
+    border: 1px solid var(--link-social-color);
     border-radius: 4px;
-    fill: #afb1b8;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
   }
 
-  &__link:focus,
-  &__link:hover {
-    border-color: var(--btm-color);
-    fill: var(--btm-color);
+  &__link:hover,
+  &__link:focus {
+    border: 1px solid var(--accent-color);
+  }
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__icon {
+    fill: var(--link-social-color);
+    transition: fill var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: var(--accent-color);
   }
 }
 
-.icon-1 {
-  width: 44px;
-  height: 48px;
+@media screen and (min-width: 768px) {
+  .clients {
+    &__items {
+      flex-basis: calc((100% - 90px) / 3);
+    }
+
+    &__link {
+      width: 226px;
+      height: 92px;
+    }
+  }
 }
 
-.icon-2 {
-  width: 40px;
-  height: 52px;
-}
-.icon-3 {
-  width: 40px;
-  height: 42px;
-}
-.icon-4 {
-  width: 80px;
-  height: 42px;
-}
-.icon-5 {
-  width: 60px;
-  height: 48px;
-}
-.icon-6 {
-  width: 88px;
-  height: 46px;
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__items {
+      flex-basis: calc((100% - 180px) / 6);
+    }
+
+    &__link {
+      width: 170px;
+      height: 92px;
+    }
+  }
 }
