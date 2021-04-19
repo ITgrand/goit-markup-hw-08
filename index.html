@@ -902,12 +902,8 @@
                 minlength="2"
                 autocomplete="off"
               />
-              <svg class="modal__icon icon-modal-name">
-                <use
-                  href="./images/icons.svg#icon-modal-name"
-                  width="12px"
-                  height="12px"
-                ></use>
+              <svg class="modal__icon" width="12px" height="12px">
+                <use href="./images/icons.svg#icon-modal-name"></use>
               </svg>
             </span>
           </label>
@@ -922,11 +918,9 @@
                 title="096-111-11-11"
                 autocomplete="off"
               />
-              <svg class="modal__icon icon-modal-tel">
+              <svg class="modal__icon" width="13px" height="13px">
                 <use
                   href="./images/icons.svg#icon-modal-tel"
-                  width="13px"
-                  height="13px"
                 ></use>
               </svg>
             </span>
@@ -940,34 +934,25 @@
                 class="modal__form-input"
                 autocomplete="off"
               />
-              <svg class="modal__icon icon-modal-mail">
+              <svg class="modal__icon" width="15px" height="12px">
                 <use
                   href="./images/icons.svg#icon-modal-mail"
-                  width="15px"
-                  height="12px"
                 ></use>
               </svg>
             </span>
           </label>
           <label class="modal__form-field">
             Комментарий
-            <textarea
-              name="user-message"
-              class="modal__form-message"
-              placeholder="Введите текст"
-            ></textarea>
+            <textarea name="user-message" class="modal__form-message" placeholder="Введите текст"></textarea>
           </label>
-          <input
-            type="checkbox"
-            id="user-term"
-            name="user-term"
-            class="modal__form-term visually-hidden"
-          />
-          <label for="user-term" class="modal__form-check-desc"
-            >Соглашаюсь с рассылкой и принимаю&nbsp;
-            <a class="modal__link" href="">Условия договора</a>
+
+          <input type="checkbox" id="user-term" name="user-term" class="modal__form-term visually-hidden"/>
+          <label for="user-term" class="modal__form-check-desc">Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a class="modal__link" href="">Условия договора</a>
           </label>
+
           <button type="submit" class="modal__form-btn">Отправить</button>
+
         </form>
       </div>
     </div>
