@@ -142,7 +142,29 @@
                     <li class="category__items">
                         <a class="category__img-wrapper-link">
                             <div class="category__img-wrapper">
-                                <img class="category__img" src="./images/portfolio/технокряк.jpg" alt="Веб-сайт" width="370" height="294">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/projects/projects-desktop-1.webp 1x, ./images/portfolio/projects/projects-desktop-1@2x.webp 2x"
+                                        media="(min-width:1200px)" type="image/webp">
+                                    <source
+                                        srcset="./images/portfolio/projects/projects-desktop-1.jpg 1x, ./images/portfolio/projects/projects-desktop-1@2x.jpg 2x"
+                                        media="(min-width:1200px)">
+                                    <source
+                                        srcset="./images/portfolio/projects/projects-tablet-1.webp 1x, ./images/portfolio/projects/projects-tablet-1@2x.webp 2x"
+                                        media="(min-width:768px)" type="image/webp">
+                                    <source
+                                        srcset="./images/portfolio/projects/projects-tablet-1.jpg 1x, ./images/portfolio/projects/projects-tablet-1@2x.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/portfolio/projects/projects-mobile-1.webp 1x, ./images/portfolio/projects/projects-mobile-1@2x.webp 2x"
+                                        media="(min-width:320px)" type="image/webp">
+                                    <source
+                                        srcset="./images/portfolio/projects/projects-mobile-1.jpg 1x, ./images/portfolio/projects/projects-mobile-1@2x.jpg 2x"
+                                        media="(min-width:320px)">
+                                
+                                    <img class="category__img" src="./images/portfolio/projects/projects-mobile-1.jpg"
+                                        alt="Технокряк">
+                                </picture>
                                 <p class="category__overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
                                     для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -281,81 +303,84 @@
     <!--FOOTER--->
     <footer class="footer">
         <div class="footer-container container">
-            <div class="footer-contact">
-                <a class="footer__logo link" href="" lang="en">
-                    <div class="footer__logo-container">
-                        <span class="logo__web">Web</span>
-                        <span class="logo__footer-studio">Studio</span>
-                    </div>
-                </a>
-                <address class="address container">
-                    <div class="address-container">
-                        <ul class="address__list list">
-                            <li class="address__item">
-                                <a class="address__link_geo link" href="https://goo.gl/maps/1xMKTDYnkmWsLrc38"
-                                    target="blank">г.
-                                    Киев,
-                                    пр-т
-                                    Леси Украинки, 26
-                                </a>
-                            </li>
-                            <li class="address__item">
-                                <a class="address__link_mail-tel link" href="mailto:info@example.com">info@example.com</a>
-                            </li>
-                            <li class="address__item">
-                                <a class="address__link_mail-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-                            </li>
-                        </ul>
-                    </div>
-                </address>
-            </div>
-            <div class="footer-social">
-                <b class="footer-social__title">присоединяйтесь</b>
-                <ul class="footer-social__list list">
-                    <li class="footer-social__links">
-                        <a href="" class="footer-social__link link">
-                            <svg class="footer-social__link-icon"  width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social__links">
-                        <a href="" class="footer-social__link link">
-                            <svg class="footer-social__link-icon"  width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social__links">
-                        <a href="" class="footer-social__link link">
-                            <svg class="footer-social__link-icon"  width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social__links">
-                        <a href="" class="footer-social__link link">
-                            <svg class="footer-social__link-icon"  width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <form action="" class="footer-active-form">
-                <div class="footer-active">
-                    <b class="footer-active__title">Подпишитесь на рассылку</b>
-                    <label class="footer-active__mail">
-                        <input type="email" name="footer-user-mail" class="footer-active__user-mail" placeholder="E-mail"
-                            autocomplete="off">
-                        <button type="submit" class="footer-active__btn">Подписаться
-                            <svg class="footer-active__btn-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-footer-send"></use>
-                            </svg>
-                        </button>
-                    </label>
+            <div class="footer-container_tablet">
+                <div class="footer-contact">
+                    <a class="footer__logo link" href="" lang="en">
+                        <div class="footer__logo-container">
+                            <span class="logo__web">Web</span>
+                            <span class="logo__footer-studio">Studio</span>
+                        </div>
+                    </a>
+                    <address class="address container">
+                        <div class="address-container">
+                            <ul class="address__list list">
+                                <li class="address__item">
+                                    <a class="address__link_geo link" href="https://goo.gl/maps/1xMKTDYnkmWsLrc38"
+                                        target="blank">г. Киев, пр-т Леси Украинки, 26
+                                    </a>
+                                </li>
+                                <li class="address__item">
+                                    <a class="address__link_mail-tel link"
+                                        href="mailto:info@example.com">info@example.com</a>
+                                </li>
+                                <li class="address__item">
+                                    <a class="address__link_mail-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </address>
                 </div>
-            </form>
+                <div class="footer-social">
+                    <b class="footer-social__title">присоединяйтесь</b>
+                    <ul class="footer-social__list list">
+                        <li class="footer-social__links">
+                            <a href="" class="footer-social__link link">
+                                <svg class="footer-social__link-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__links">
+                            <a href="" class="footer-social__link link">
+                                <svg class="footer-social__link-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__links">
+                            <a href="" class="footer-social__link link">
+                                <svg class="footer-social__link-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social__links">
+                            <a href="" class="footer-social__link link">
+                                <svg class="footer-social__link-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-active-container">
+                <form action="#" class="footer-active-form">
+                    <div class="footer-active">
+                        <b class="footer-active__title">Подпишитесь на рассылку</b>
+                        <label class="footer-active__mail">
+                            <input type="email" name="footer-user-mail" class="footer-active__user-mail"
+                                placeholder="E-mail" autocomplete="off" />
+                            <button type="submit" class="footer-active__btn">
+                                Подписаться
+                                <svg class="footer-active__btn-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-footer-send"></use>
+                                </svg>
+                            </button>
+                        </label>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
 

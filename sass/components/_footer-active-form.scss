@@ -1,30 +1,47 @@
-/*.footer-active {
-  padding-top: 12px;
-  margin-left: 93px;
+.footer-active {
+  text-align: center;
 
   &__title {
-    font-family: var(--main-font);
+    display: block;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #ffffff;
-  }
-
-  &__mail {
-    display: flex;
-    margin-top: 20px;
   }
 
   &__user-mail {
-    width: 358px;
-    padding-left: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background-color: inherit;
-
+    width: 100%;
+    max-width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 15px 16px;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background-color: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+    transition: border-color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+
+  &__user-mail:focus,
+  &__user-mail:hover {
+    border-color: var(--accent-color);
+  }
+
+  &__user-mail::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     outline: none;
@@ -33,34 +50,30 @@
   &__btn {
     display: flex;
     align-items: center;
-    margin-left: 12px;
-
+    margin: 0 auto;
     width: 200px;
+    height: 50px;
     padding-left: 29px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    background-color: var(--btm-color);
-    border-color: var(--btm-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
+    padding-right: 29px;
+    font-weight: 700;
     font-size: 16px;
-    font-weight: bold;
-    line-height: 30px;
+    line-height: 1.88;
     letter-spacing: 0.06em;
     color: #ffffff;
-
-    cursor: pointer;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0px;
+    border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__btn:focus {
+  &__btn:hover {
+    cursor: pointer;
     background-color: #188ce8;
   }
 
-  &__btn-icon {
+  &__btn > svg {
     margin-left: 10px;
+    fill: #ffffff;
   }
 }
-*/
